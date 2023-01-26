@@ -10,22 +10,28 @@ display:flex;
   flex-direction:column;
   padding:30px 20px;
   height:100%;
+}
 `
 const Left =styled.div`
 width:50%;
 @media only screen and (max-width:480px){
   display:none;
+}
 
 `
 const Right =styled.div`
-padding-top:100px;
+padding-top:70px;
 width:50%;
 display:flex;
 flex-direction:column;
 justify-content:center;
-@media only screen and (max-width:480px){
-  width:100%;
+@media only screen and (max-width:1024px){
+  padding-top:30px;
+}
 
+@media only screen and (max-width:480px){
+  width:80%;
+}
 `
 
 const Image = styled.img`
@@ -35,8 +41,12 @@ height:130%;
 
 const Title = styled.span`
 font-size:70px;
+@media only screen and (max-width:1024px){
+  font-size:50px;
+}
 @media only screen and (max-width:480px){
   font-size:40px;
+}
 `
 const SubTitle = styled.span`
 margin-top:30px;

@@ -20,6 +20,10 @@ padding:20px;
 display:flex;
 align-items:center;
 justify-content:center;
+@media only screen and (max-width:1024px){
+  flex-direction:column
+}
+
 @media only screen and (max-width:480px){
   flex-direction:column;
 }
@@ -100,6 +104,9 @@ width:50%;
 display:flex;
 flex-direction:column;
 align-items:center;
+@media only screen and (max-width:1024px){
+  padding-top:10px;
+}
 @media only screen and (max-width:480px){
   width:100%;
 }
@@ -108,7 +115,10 @@ align-items:center;
 const AddressItem = styled.div`
 display:flex;
 align-items:center;
-margin-bottom:50px;
+margin-bottom:100px;
+@media only screen and (max-width:1024px){
+   margin-bottom: 15px;
+}
 @media only screen and (max-width:480px){
   margin-bottom:15px;
 }
